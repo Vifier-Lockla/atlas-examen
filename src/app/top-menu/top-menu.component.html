@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+          aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand ofa-title" (click)=toHome()>{{title}}</a>
+
+  <div class="collapse navbar-collapse row" id="navbar">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" (click)=toHome() >A propos</a>
+        </li>
+        <li *ngIf="logged" class="nav-item">
+          <a class="nav-link" [routerLink]="['/profil', loginInformation.id]" >Profile</a>
+        </li>
+      </ul>
+      <span *ngIf="logged"><span  class="ofa-welcome">Bienvenue </span><span class="ofa-pseudo">{{loginInformation.pseudo}}</span></span>
+      <div *ngIf="!logged" class="form-inline my-2 my-lg-0">
+        <button class="btn btn-outline-success my-2 my-sm-0 ofa-button" (click)=login() type="button">Se connecter</button>
+        <button class="btn btn-outline-success my-2 my-sm-0 ofa-button" (click)=signup() type="button">S'inscrire</button>
+      </div>
+      <div *ngIf="logged" class="form-inline my-2 my-lg-0">
+        <button class="btn btn-outline-success my-2 my-sm-0 ofa-button" (click)=logout() type="button">Se déconnecter</button>
+      </div>
+  </div>
+</nav>
+

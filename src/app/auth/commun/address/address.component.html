@@ -1,0 +1,10 @@
+<p-card header="" subheader="Adresse(s)" styleClass="ui-card-shadow">
+  <div *ngFor="let adresse of addressList">
+    <div>
+      <span class="ofa-label">{{adresse.libelle}} : </span>
+    </div>
+    <div>
+      <span>{{adresse.numero}}, {{adresse.rue}} - {{adresse.codePostal}} - {{adresse.ville}}</span>
+    </div>
+  </div>
+</p-card>

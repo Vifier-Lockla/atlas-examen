@@ -1,0 +1,27 @@
+.card {
+  margin-top: 150px;
+  padding-left: 0;
+  padding-right: 0;
+
+}
+.card-body {
+  padding-left: 20px;
+  margin-left: 0;
+  margin-right: 0;
+
+}
+
+input {
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.profil-div-button {
+  text-align: right;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.alert {
+  color: red;
+}

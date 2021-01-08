@@ -1,0 +1,9 @@
+:host {
+  margin: 10px;
+}
+
+.profile-label {
+  width: 100px;
+  font-weight: bold;
+  display: inline-block;
+}

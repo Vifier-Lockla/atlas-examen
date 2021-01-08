@@ -1,0 +1,21 @@
+<div [style]="{height: '50px'}"></div>
+<p-card header="{{title}}" subheader="" styleClass="ui-card-shadow">
+
+  <div>
+    <span class="profile-label">Pseudo : </span><span>{{compte?.pseudo}}</span>
+  </div>
+  <div>
+    <span class="profile-label">Utilisateur : </span><span>{{compte?.prenom}} {{compte?.nom}}</span>
+  </div>
+
+  <hr class="my-2">
+
+  <nvg-telephone [phonelist]="compte?.listeNumTelephone"></nvg-telephone>
+
+  <nvg-email [emailList]="compte?.listeEmail"></nvg-email>
+
+  <nvg-address [addressList]="compte?.listeAdresse"></nvg-address>
+
+</p-card>
+
+
